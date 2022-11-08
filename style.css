@@ -50,9 +50,55 @@ header {
   height: 2px;
 }
 
+form {
+  text-align: left;
+}
+
+form input {
+  width: 35px;
+}
+.prompt {
+  max-width: 800px;
+  padding: 10px;
+  display: block;
+}
+
+.prompt input[type='checkbox']{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  appearance: none;
+  outline: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  line-height: 20px;
+  background:  hsl(360, 91%, 36%);
+}
+
+input[type='checkbox']:checked:after {
+  content: '✓' ;
+  color: white;
+}
+
+.prompt label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 5px;
+  position: relative;
+  margin-left: 32px;
+}
+
+.prompt input:checked + .prompt label:after {
+  opacity: 2;
+}
+
 .card-body {
   min-height: 100px;
 }
+
 
 .card-footer {
   text-align: center;
