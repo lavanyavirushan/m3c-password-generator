@@ -52,10 +52,11 @@ header {
 
 form {
   text-align: left;
+  font-weight: bold;
 }
 
 form input {
-  width: 35px;
+  width: 3rem;
 }
 .prompt {
   max-width: 800px;
